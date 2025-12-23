@@ -24,11 +24,20 @@
  */
 function recurringTimer(message, interval) {
   // Set up a timer using setInterval to log the message
-  // Return the timer ID
+  const timerId = setInterval(()=>{
+    console.log(message)
+  }, interval)
+
+
+return timerId;
+
+// Return the timer ID
 }
+recurringTimer("Log in to continue", 1000)
 
 function stopRecurringTimer(timerId) {
   // Stop the timer using clearInterval
+  clearInterval(timerId)
 }
 
 module.exports = { recurringTimer, stopRecurringTimer };
