@@ -33,7 +33,6 @@ return timerId;
 
 // Return the timer ID
 }
-recurringTimer("Log in to continue", 1000)
 
 function stopRecurringTimer(timerId) {
   // Stop the timer using clearInterval
